@@ -1,5 +1,5 @@
 <template>
-  <div class='container-fluid bg-picture pt-3'>
+  <div class='container-fluid bg-picture pt-3 h-100'>
     <h1 class="text-light text-center">Poke Dragger</h1>
     <the-icon-list></the-icon-list>
   </div>
@@ -25,11 +25,19 @@
 
 <style>
 .bg-picture { 
-  background: url(../assets/bg.png) no-repeat center center fixed; 
+  background: url(../assets/bg.png) repeat center center scroll; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 100vh;
+  overflow: scroll;
+}
+
+#app { 
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
 }
 </style>

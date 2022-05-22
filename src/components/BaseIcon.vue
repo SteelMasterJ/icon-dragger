@@ -1,6 +1,6 @@
 <template>
     <div class="row">
-        <img class="poke-icon mx-auto my-3" :src="getImageUrl(icon)" draggable="false"/>
+        <img class="poke-icon mx-auto my-3 p-0" :src="getImageUrl(icon)" draggable="false"/>
         <div class="text-center text-dark align-self-center mb-3 h5">{{label}}</div>
     </div>
 </template>
