@@ -1,6 +1,6 @@
 <template>
   <div class='container-fluid bg-picture pt-3 h-100'>
-    <h1 class="text-light text-center">Poke Dragger</h1>
+    <h1 class="text-light ps-3">PokeDragger</h1>
     <the-icon-list></the-icon-list>
   </div>
 </template>
@@ -12,7 +12,7 @@
   const App = defineComponent({
     name: "App",
     components: {
-      TheIconList
+      TheIconList,
     },
     setup() {
       return {
@@ -25,12 +25,8 @@
 
 <style>
 .bg-picture { 
-  background: url(../assets/bg.png) repeat center center scroll; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  overflow: scroll;
+background: rgb(224,36,36);
+background: linear-gradient(172deg, rgba(224,36,36,1) 12%, rgba(255,255,255,1) 53%);
 }
 
 #app { 
